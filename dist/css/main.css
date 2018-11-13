@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+}
+
+.products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .products {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.product_image {
+  width: 200px;
+  height: 200px;
+}
+
+.widget {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .widget_wrap {
+    top: 5%;
+    left: 0;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+#product_tab {
+  background: #00207e;
+  color: #fff;
+  padding: 6px 10px;
+}
+
+#product_tab:hover {
+  cursor: pointer;
+}
+
+#recommendation_tab {
+  padding: 6px 10px;
+  background: #e0e8ff;
+}
+
+#recommendation_tab:hover {
+  cursor: pointer;
+}
+
+#product {
+  padding: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-column-gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #product {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    justify-items: center;
+  }
+}
+
+#display {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.rec {
+  padding: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-column-gap: 20px;
+}
+
+.rec_image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+#close {
+  font-size: 30px;
+  float: right;
+  color: #00207e;
+  display: block;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+.product_button {
+  display: block;
+  border: none;
+  color: #fff;
+  background: #00207e;
+  padding: 3px 10px;
+}
+
+.product_button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
